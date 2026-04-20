@@ -27,10 +27,10 @@ input, button {
   border: 1px solid #ccc;
 }
 
-/* input[type="date"] {
+input[type="date"] {
   width: 100%;
-  max-width: 100%;
-} */
+  max-width: 90%;
+}
 
 button {
   cursor: pointer;
