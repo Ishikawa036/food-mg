@@ -30,6 +30,8 @@ input, button {
 input[type="date"] {
   width: 100%;
   box-sizing: border-box;
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 button {
