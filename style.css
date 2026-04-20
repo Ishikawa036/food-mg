@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 10px;
+  background: #f5f7fb;
+}
+
+h3 {
+  margin: 10px 0 !important;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto; 
+}
+
+input, button {
+  font-size: 16px;
+  padding: 10px;
+  margin: 5px 0;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  cursor: pointer;
+  background: #4CAF50;
+  color: white;
+  border: none;
+}
+
+.item {
+  background: white;
+  border-radius: 12px;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.item span {
+  display: block;
+}
+
+.item-left {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.item button {
+  width: 80px;
+  flex-shrink: 0;
+}
+
+.food-name {
+  font-weight: bold;
+}
+
+.food-date {
+  font-size: 14px;
+}
+
+.danger {
+  color: red;
+  font-weight: bold;
+}
