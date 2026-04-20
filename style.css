@@ -32,6 +32,8 @@ input[type="date"] {
   box-sizing: border-box;
   -webkit-appearance: none;
   appearance: none;
+  min-height: 44px;
+  line-height: normal;
 }
 
 button {
