@@ -29,7 +29,7 @@ input, button {
 
 input[type="date"] {
   width: 100%;
-  max-width: 90%;
+  box-sizing: border-box;
 }
 
 button {
