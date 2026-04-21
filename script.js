@@ -42,7 +42,7 @@ function render() {
     foods.sort((a, b) => {
         return getDiffDays(a.date) - getDiffDays(b.date);
     });
-    
+
     list.innerHTML = "";
 
     foods.forEach((food, index) => {
@@ -53,10 +53,12 @@ function render() {
 
         if (diff < 0) {
             text = "期限切れ⚠";
-            className = "danger";
         } else if (diff === 0) {
             text = "今日まで⚠";
-            className = "danger";
+        } else if (diff === 1) {
+            text = "明日";
+        } else if (diff === 2) {
+            text = "明後日";
         } else {
             text = "あと " + diff + " 日";
         }
@@ -89,7 +91,7 @@ function removeFood(index) {
 render();
 
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('sw.js')
-    .then(() => console.log('SW登録成功'))
-    .catch(err => console.log('SW登録失敗', err));
+    navigator.serviceWorker.register('sw.js')
+        .then(() => console.log('SW登録成功'))
+        .catch(err => console.log('SW登録失敗', err));
 }
