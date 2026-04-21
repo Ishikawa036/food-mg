@@ -63,6 +63,10 @@ function render() {
             text = "あと " + diff + " 日";
         }
 
+        if (diff <= 1) {
+            className = "danger";
+        }
+
         const div = document.createElement("div");
         div.className = "item " + className;
 
